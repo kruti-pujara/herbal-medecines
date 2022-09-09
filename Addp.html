@@ -1,0 +1,89 @@
+<html>
+<head>
+	<link rel="stylesheet" href="Addp.css"></link>
+</head>
+	<body>
+	<header>
+			<nav>
+				<h1>HERBAL</h1>
+				<h1>MEDICINES</h1>
+					<ul id="nav">
+						<li><a class="homered"href="adminhome.html">HOME</a></li>
+						<li><a class="homeblack1"href="addp.html">PRODUCT</a></li>
+						<li><a class="homeblack"href="show.php">FEEDBACK</a></li>
+						<li><a class="homeblack"href="Orders.php">ORDER</a></li>
+						<li><a class="homeblack"href="manageuser.php">MANAGE USER</a></li>
+						<li><a class="homeblack"href="Userhome.html">LOGOUT</a></li>
+						
+
+					</ul>
+			</nav>
+		</header>
+		<div class="divider">
+		</div>
+	<center>
+		<div class="one">
+		<form action="Addp.php" method="POST" enctype="multipart/form-data">
+			<table class="two" cellspacing="20px">
+			<tr>
+				<td>
+						<label for="P_id">Product id</label>
+					</td>
+					<td>
+						<input id="P_id" type="text" name="pid" placeholder="product id" required size="30px">
+					</td>
+			</tr>
+				
+				<tr>
+					<td>
+						<label for="P_name">Product Name</label>
+					</td>
+					<td>
+						<input id="P_name" type="text" name="pname" placeholder="product name" pattern="^[a-zA-Z]*$" required size="30px">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Quantity">Product Quantity</label>
+					</td>
+					<td>
+						<input id="Quantity" type="text" name="quantity" placeholder="product Quantity" required size="30px">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Price">Product Price</label>
+					</td>
+					<td>
+						<input id="price" type="text" name="price" placeholder="product price" required size="30px">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="About">About Product</label>
+					</td>
+					<td>
+						<input id="About" type="text" name="about" placeholder="About product" required size="30px">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Filebutton">Image</label>
+					</td>
+					<td>
+						<input id="Filebutton" type="file" name="image">
+					</td>
+				<tr>
+					<td>
+						<input type="submit" name="submit" value="Insert"  class="three" >
+					</td>
+				</tr>
+				
+			</table>
+			
+				
+		</form>
+		<a href="display.php">View More</a>
+		</div>
+	</body>
+</html>
